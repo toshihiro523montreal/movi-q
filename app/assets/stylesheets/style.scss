@@ -153,24 +153,24 @@
 //   height: 62px;
 //   div.header__bar.row {
 //     position: relative;
-//     h1.grid-6 {
-//       font-size: 20px;
-//       line-height: 41px;
-//       float: left;
-//       a {
-//         display: block;
-//       }
-//     }
-//     div.grid-6 {
-//       float: right;
-//       text-align: right;
-//       a.post {
-//         @extend .btn;
-//         width: 120px;
-//         display: inline-left;
-//         margin-left: 10px;
-//       }
-//     }
+    h1.grid-6 {
+      font-size: 20px;
+      line-height: 41px;
+      float: left;
+      a {
+        display: block;
+      }
+    }
+    div.grid-6 {
+      float: right;
+      text-align: right;
+      a.post {
+        // @extend .btn;
+        width: 120px;
+        display: inline-left;
+        margin-left: 10px;
+      }
+    }
 //   }
 //   .user_nav {
 //     position: relative;

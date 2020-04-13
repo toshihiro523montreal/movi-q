@@ -5,6 +5,6 @@ class Post < ApplicationRecord
 
   def self.search(search)
     return Post.all unless search
-    Tweet.where('text LIKE(?)', "%#{search}%")
+    Post.where('text LIKE(?)', "%#{search}%")
   end
 end
