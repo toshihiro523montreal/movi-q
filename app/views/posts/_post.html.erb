@@ -3,7 +3,7 @@
     <%# <span><%= image_tag 'arrow_top.png' %>
     <ul class="more_list">
       <li>
-        <%= link_to '詳細', "/posts/#{post.id}", method: :get %>
+        <%= link_to '答える', "/posts/#{post.id}", method: :get %>
       </li>
       <% if user_signed_in? && current_user.id == post.user_id %>
         <li>
@@ -16,12 +16,12 @@
     </ul>
   </div>
   <%= simple_format(post.text) %>
-      <span class="name">
-        <a href="/users/<%= post.user.id %>">
-          <span>投稿者</span><%= post.user.nickname %>
-        </a>
-      </span> 
-    </div> 
+    <span class="name">
+      <a href="/users/<%= post.user.id %>">
+        <span>投稿者</span><%= post.user.nickname %>
+      </a>
+    </span> 
+</div> 
 
 
     <%# style="background-image: url(<%= post.image %>
