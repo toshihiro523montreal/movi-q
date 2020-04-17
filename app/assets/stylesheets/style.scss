@@ -21,7 +21,14 @@ $darkGray: #999999;
 $gray: #D8D8D8;
 $lightGray: #f3f5f3;
 $white: white;
+$red: red;
+$pink: pink;
+$orange: orange;
 
+
+*:focus {
+  outline: none;
+  }
 
 // mixin
 
@@ -38,7 +45,7 @@ $white: white;
 
 body,html {
   height: 100%;
-  background-color: $lightGray;
+  background-color: #EEFFFF;
 }
 
 body {
@@ -127,12 +134,16 @@ header.header {
   right: 0;
   z-index: 5;
   height: 80px;
+  
   div.header__bar.row {
-    position: relative;
+    // position: relative;
+    display: flex;
     h1.grid-6 {
-      font-size: 20px;
+      display: inline;
+      font-size: 30px;
       line-height: 41px;
-      float: left;
+      // float: left;
+      
       a {
         display: block;
       }
@@ -143,12 +154,14 @@ header.header {
 
     }
     div.grid-6 {
+      display: contents;
       // float: right;
       text-align: right;
       a.post {
         @extend .btn;
-        width: 120px;
-        display: inline-left;
+        width: 150px;
+        line-height: 30px;
+        // display: inline-left;
         margin-left: 10px;
       }
     }
@@ -218,6 +231,8 @@ header.header {
   }
 }
 div.contents.row {
+  margin-top: 40px;
+  max-width: 660px;
   h2 {
     @include boxBase(20px 0, 0);
     font-weight: normal;
@@ -232,14 +247,15 @@ div.contents.row {
   font-family: "游ゴシック", "YuGothic";
   }
   div.content_post {
-    @include boxBase(20px 0 ,0px);
+    @include boxBase(20px 0px 0px 0px);
     position: relative;
-    height: 150px;
+    height: 200px;
     border: solid;
     // color: rgb(94, 73, 211);
     background-size: cover;
     background-position: center center;
     border-radius: 3px;
+    overflow: scroll;
     // box-shadow: 0 0 10px rgba($black,0.2);
     &:after {
       content: '';
@@ -301,8 +317,8 @@ div.contents.row {
       margin: 0;
       font-size: 20px;
       z-index: 2;
-      font-weight: bold;
-      text-shadow: 0 0 2px #000, 0 0 1px #000, 0 0 1px #000;
+      // font-weight: bold;
+      // text-shadow: 0 0 2px #000, 0 0 1px #000, 0 0 1px #000;
     }
     span.name {
       position: absolute;
@@ -400,4 +416,6 @@ footer {
   }
 }
 
-
+.pagination {
+  margin-top: 20px;
+}

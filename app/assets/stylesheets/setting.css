@@ -454,7 +454,7 @@ ul li {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 660px;
+  /* max-widthz: 660px; */
   *zoom: 1;
 }
 .row .grid-1,
@@ -489,7 +489,7 @@ ul li {
   width: 39.86667%;
 }
 .row .grid-6 {
-  width: 48.2%;
+  width: 18.2%;
 }
 .row .grid-7 {
   width: 56.53333%;
@@ -590,13 +590,13 @@ ul li {
     position: static !important; */
   }
 }
-max-width 640px, mobile-only styles, use when QAing mobile issues
+/* max-width 640px, mobile-only styles, use when QAing mobile issues
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
   .row .grid-1,
   .row .grid-2,
   .row .grid-3,
   .row .grid-4 {
     /* width: 48.2% !important; */
-  }
-}
+   
+
 /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */

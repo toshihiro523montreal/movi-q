@@ -1,27 +1,29 @@
+<span class="name">
+ 
+</span> 
 <div class="content_post" >
-  <div class="more">
+ <a href="/users/<%= post.user.id %>">
+    <<span>投稿者</span><%= post.user.nickname %>さん>
+  </a>
+  <%= simple_format(post.text) %>
+</div>
+<div class="more">
     <%# <span><%= image_tag 'arrow_top.png' %>
     <ul class="more_list">
       <li>
+      <%# <a class="btn" href="/posts">投稿一覧へ戻る</a> %>
         <%= link_to '答える', "/posts/#{post.id}", method: :get %>
       </li>
       <% if user_signed_in? && current_user.id == post.user_id %>
         <li>
-          <%= link_to '編集', "/posts/#{post.id}/edit", method: :get %>
+          <%= link_to '編集する', "/posts/#{post.id}/edit", method: :get %>
         </li>
         <li>
-          <%= link_to '削除', "/posts/#{post.id}", method: :delete %>
+          <%= link_to '削除する', "/posts/#{post.id}", method: :delete %>
         </li>
       <% end %>
     </ul>
   </div>
-  <%= simple_format(post.text) %>
-    <span class="name">
-      <a href="/users/<%= post.user.id %>">
-        <span>投稿者</span><%= post.user.nickname %>
-      </a>
-    </span> 
-</div> 
 
 
     <%# style="background-image: url(<%= post.image %>
