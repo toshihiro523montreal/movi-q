@@ -132,13 +132,14 @@ html,body,div,span,iframe,h1,h2,h3,h4,h5,p,a,img,ul,li,table,tr,th,td,tbody,foot
 	text-decoration: none;
 }
 
+
+
 body {
 	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 
-  // .serif {
-  //   font-family: 'ヒラギノ角ゴ Pro W3',serif;
-  // }
 
+
+  // ＃ヘッダー上の部分
   header.header {
     // background: url(https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/6432841/picture_pc_e9cd48501e8ad5f03a13bfefcf9e1f19.jpg) no-repeat;
     // width: 100%;
@@ -204,11 +205,11 @@ body {
 
 
 
-
+// # user名マイページログアウト
   .user_nav {
-    // position: relative;
-    // height: 100px;
-    // right: 0;
+    position: relative;
+    height: 100px;
+    right: 0;
     span {
       // top: 5px;
       // display: block;
@@ -234,89 +235,40 @@ body {
       position: absolute;
       // top: 46px;
       // right: 0;
-      // border-left: 1px solid #d8d8d8;
-      // border-right: 1px solid #d8d8d8;
-      // border-top: 1px solid #d8d8d8;
-      // border-bottom: 1px solid #d8d8d8;
-      // box-shadow: 1px 2px 5px rgba(0,0,0,0.1);
+      border-left: 1px solid #d8d8d8;
+      border-right: 1px solid #d8d8d8;
+      border-top: 1px solid #d8d8d8;
+      border-bottom: 1px solid #d8d8d8;
+      box-shadow: 1px 2px 5px rgba(0,0,0,0.1);
       li {
         background-color: white;
         a {
           display: block;
           padding: 5px 10px;
-          // text-align: left;
-          // border-bottom: 1px solid #d8d8d8;
+          text-align: left;
+          border-bottom: 1px solid #d8d8d8;
         }
       }
      }
   }
 
-.form {
-  // background: url(https://dl.dropboxusercontent.com/u/5840617/DeathtoStock_Wired3.jpg);
-  // background-size: cover;
-  .contents {
-    // position: absolute;
-    // left: 0;
-    // top: 30%;
-    // bottom: 0;
-    // right: 0;
-  }
-  footer {
-    // position: absolute;
-    // bottom: 10px;
-    // left: 0;
-    // right: 0;
-  }
-}
 
 
-div.contents.row {
-  margin: 100px auto 0px auto;
-  max-width: 660px;
-  h2 {
-    // @include boxBase(20px 0, 0);
-    font-weight: normal;
-    strong {
-      // font-weight: bold;
-      // padding-right: 5px;
-      // font-size: 1.2em;
+
+// # 入力フォーム
+  .form {
+    // background: url(https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/6432841/picture_pc_e9cd48501e8ad5f03a13bfefcf9e1f19.jpg) no-repeat;
+    // background: url(https://dl.dropboxusercontent.com/u/5840617/DeathtoStock_Wired3.jpg);
+    background-size: cover;
+    .contents {
+      // position: absolute;
+      // left: 0;
+      // top: 30%;
+      // bottom: 0;
+      // right: 0;
     }
   }
-}
 
-
-
-  
-
-
-
-
-
-
-.container {
-  // @include boxBase(20px 0 ,30px);
-  // box-shadow: 0 0 10px rgba($black,0.2);
-  // background-color: $white;
-  // box-sizing: border-box;
-}
-.comments {
-  // padding: 5px;
-  // margin-top: 15px;
-  a {
-    // color: $dark;
-    &:hover {
-      // text-decoration: underline;
-    }
-  }
-}
-
-  footer {
-    // @include boxBase;
-    // color: $dark;
-    p {
-      // text-align: center;
-    }
-  }
 
   .search-form {
     text-align: center;
@@ -331,8 +283,72 @@ div.contents.row {
     }
   }
 
+
+  // # コンテント
+  div.contents.row {
+    margin: 100px auto 0px auto;
+    max-width: 660px;
+    span {
+      // @include boxBase(20px 0, 0);
+      font-weight: normal;
+      // strong {
+        // font-weight: bold;
+        // padding-right: 5px;
+        // font-size: 1.2em;
+      // }
+    }
+
+
+    // .container {
+    div.content_post {
+      // @include boxBase(20px 0 ,30px);
+      // box-shadow: 0 0 10px rgba($black,0.2);
+      // background-color: $white;
+      // box-sizing: border-box;
+      .comments {
+        padding: 5px;
+        margin-top: 15px;
+        a {
+          // color: $dark;
+          // &:hover {
+          //   text-decoration: underline;
+          }
+        p {
+
+        }
+        }
+      }
+    }
+  
+  .more {
+    .more_list {
+      .li {
+        .a {
+
+        }
+      }
+    }
+  }
+   
+  // # ページ
   .pagination {
     // margin-top: 20px;
   }
 
+
+
+
+
+// # フッター
+footer {
+  // position: absolute;
+  // bottom: 10px;
+  // left: 0;
+  // right: 0;
+  // @include boxBase;
+  // color: $dark;
+  p {
+    // text-align: center;
+  }
+}
 }
