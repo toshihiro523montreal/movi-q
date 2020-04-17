@@ -24,21 +24,22 @@
   <body>
     <header class="header">
       <div class="header__bar row">
-        <h1 class="grid-6"><a href="/">MoviQ</a></h1>
-        <% if user_signed_in? %>
-          <div class="user_nav grid-6">
-            <span><%= current_user.nickname %>
-              <ul class="user__info">
-                <li>
-                  <%= link_to "マイページ", "/users/#{current_user.id}" %>
-                  <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
-                </li>
-              </ul>
-            </span>
-            <%= link_to  "投稿する", "/posts/new", class: "post" %>
-          </div>
-        <% else %>
-          <div class="grid-6">
+        <h1 class="title"><a href="/">MoviQ</a></h1>
+          <h4 class="sub"><a href="/">ここは映画のタイトルを知りたい人が質問するサイトです</a></h4>
+            <% if user_signed_in? %>
+              <div class="user_nav grid-6">
+                <span><%= current_user.nickname %>
+                  <ul class="user__info">
+                    <li>
+                      <%= link_to "マイページ", "/users/#{current_user.id}" %>
+                      <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+                    </li>
+                  </ul>
+                </span>
+                <%= link_to  "投稿する", "/posts/new", class: "post" %>
+              </div>
+            <% else %>
+          <div class="input">
             <%= link_to "ログイン", new_user_session_path, class: 'post' %>
             <%= link_to "新規登録", new_user_registration_path, class: 'post' %>
           </div>
@@ -50,7 +51,7 @@
 
     <footer>
       <p>
-        MoviQ since 2020.
+        MoviQ  since 2020.
       </p>
     </footer>
   </body>
