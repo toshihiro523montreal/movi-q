@@ -4,7 +4,7 @@
     <title>MoviQ</title>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-    <%= csrf_meta_tags %>
+    <%= csrf_meta_tags %>  
     <script type="text/javascript">
       WebFontConfig = {
         google: { families: [ 'Unica+One::latin' ] }
@@ -25,7 +25,7 @@
     <header class="header">
       <div class="header__bar row">
         <h1 class="title"><a href="/">MoviQ</a></h1>
-          <h4 class="sub"><a href="/">ここは映画のタイトルを知りたい人が質問するサイトです</a></h4>
+          <h4 class="sub"><a href="/">これは映画のタイトルを知りたい人が質問するサイトです</a></h4>
             <% if user_signed_in? %>
               <div class="user_nav grid-6">
                 <span><%= current_user.nickname %>
