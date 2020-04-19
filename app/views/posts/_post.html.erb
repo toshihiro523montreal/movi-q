@@ -2,27 +2,27 @@
  
 </span> 
 <div class="content_post" >
- <a href="/users/<%= post.user.id %>">
-    <<span>投稿者</span><%= post.user.nickname %>さん>
+ <a href="/users/<%= post.user.id %>", class="btn btn-primary" >
+    <<span>質問者</span><%= post.user.nickname %>さん>
   </a>
   <%= simple_format(post.text) %>
 </div>
 <div class="more">
     <%# <span><%= image_tag 'arrow_top.png' %>
-    <ul class="more_list">
-      <li>
+    <div class="more_list">
+      <%# <li> %>
       <%# <a class="btn" href="/posts">投稿一覧へ戻る</a> %>
-        <%= link_to '答える', "/posts/#{post.id}", method: :get %>
-      </li>
+        <%= link_to '答える', "/posts/#{post.id}", method: :get, class: 'btn btn-danger' %>
+      <%# </li> %>
       <% if user_signed_in? && current_user.id == post.user_id %>
-        <li>
-          <%= link_to '編集する', "/posts/#{post.id}/edit", method: :get %>
-        </li>
-        <li>
-          <%= link_to '削除する', "/posts/#{post.id}", method: :delete %>
-        </li>
+        <%# <li> %>
+          <%= link_to '編集する', "/posts/#{post.id}/edit", method: :get, class: 'btn btn-danger' %>
+        <%# </li> %>
+        <%# <li> %>
+          <%= link_to '削除する', "/posts/#{post.id}", method: :delete, class: 'btn btn-danger' %>
+        <%# </li> %>
       <% end %>
-    </ul>
+    </div>
   </div>
 
 
