@@ -32,16 +32,16 @@ $orange: orange;
 
 // // mixin
 
-// @mixin boxBase($margin: 30px auto, $padding: 10px) {
-//   margin: $margin;
-//   padding: $padding;
-// }
-// @mixin basePadding($padding: 10px) {
-//   padding: $padding;
-// }
-// @mixin baseMargin($margin: 10px auto) {
-//   margin: $margin;
-// }
+@mixin boxBase($margin: 30px auto, $padding: 10px) {
+  margin: $margin;
+  padding: $padding;
+}
+@mixin basePadding($padding: 10px) {
+  padding: $padding;
+}
+@mixin baseMargin($margin: 10px auto) {
+  margin: $margin;
+}
 
 body,html {
   // height: 100%;
@@ -184,18 +184,19 @@ body {
 
       h4.sub {
         padding: 0 10%;
-        font-size: 16px;
+        font-size: 20px;
         color: white;
-        line-height: 5px;
-        // height: 150px;
+        margin-top: 20px;
+        height: 100px;
         // display: flex;
         // display: contents;
         // float: right;
         // text-align: right;
-        line-height: 100px;
+        line-height: 20px;
+        margin-left: 110px;
         a {
           text-decoration: none;
-          margin-left: 100px;
+          margin-left: 130px;
            // @extend .btn;
           // width: 150px;
           line-height: 50px;
@@ -274,18 +275,21 @@ body {
         // margin-right: 50px;
         width: 150px;
         height: 50px;
-        font-size: 1em;
+        font-size: 30px;
         cursor: pointer;
         position: relative;
         &:after {
           content: '▼';
-          font-size: .7em;
+          font-size: .1em;
           margin-left: -4px;
         }
+        a {
+          font-size: 15px
+      }
         &:hover ul {
           // color: $accent;
           display: block;
-          
+          font-size: 30px;
         }
       }
       ul {
@@ -372,6 +376,36 @@ body {
     // }
 
 
+    form {
+      h3 {
+        // @include baseMargin(0 0 20px);
+        text-align: center;
+        font-weight: normal;
+        font-size: 20px;
+        // color: $dark;
+      }
+      input,textarea {
+        width: 100%;
+        @include boxBase(5px 0 15px,10px);
+        // border: 1px solid $gray;
+        // border-radius: 5px;
+        // font-family: "游ゴシック", "YuGothic";
+      }
+      input[type="submit"] {
+        // @extend .transition;
+        // background-color: $accent;
+        // border-radius: 20px;
+        // color: #fff;
+        border: 0;
+        font-size: 15px;
+        &:hover {
+          // background-color: lighten($accent, 10%);
+        }
+      }
+    }
+
+
+
     
     .search-form {
       // max-width: 660px;
@@ -413,9 +447,14 @@ body {
     margin: 150px auto 0px auto;
     max-width: 660px;
     // padding-top: -50px;
-    span {
+    p {
+      font-size: 20px;
+    }
+    a span {
       // @include boxBase(20px 0, 0);
       font-weight: normal;
+      color: white;
+      font-size: 20px;
       // padding-top: -50px;
       // strong {
         // font-weight: bold;
@@ -423,8 +462,10 @@ body {
         // font-size: 1.2em;
       // }
     }
-
-
+    a {
+      color: white;
+      font-size: 20px;
+    }
     // .container {
     div.content_post {
       // @include boxBase(20px 0 ,30px);

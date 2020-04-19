@@ -1,6 +1,6 @@
 <%= form_with(url: posts_searches_path, local: true, method: :get, class: "search-form") do |form| %>
   <%= form.text_field :keyword, placeholder: "質問のキーワードを検索する", class: "form-control" %>
-  <%= form.submit "検索", class: "btn" %>
+  <%= form.submit "検索", class: "btn btn-light" %>
 <% end %>
 <div class="contents row">
   <% @posts.each do |post| %>
