@@ -25,7 +25,6 @@ $red: red;
 $pink: pink;
 $orange: orange;
 
-
 // *:focus {
 //   outline: none;
 //   }
@@ -46,12 +45,10 @@ $orange: orange;
 body,html {
   // height: 100%;
   // background-color: #EEFFFF;
-  
 }
 
 body {
   // padding-top: 60px;
-  
 }
 
 h1,h2,h3,h4,h5,h6,body {
@@ -65,7 +62,6 @@ h1,h2,h3,h4,h5,h6,body {
 
 a {
   text-decoration: none;
-  
   // color: $dark;
   // @extend .transition;
   &:hover {
@@ -138,16 +134,12 @@ html,body,div,span,iframe,h1,h2,h3,h4,h5,p,a,img,ul,li,table,tr,th,td,tbody,foot
 	// text-decoration: none;
 }
 
-
-
 body {
   background: url(https://beiz.jp/images_P/wood-texture/wood-texture_00018.jpg);
   width: 100%;
   height: 100%;
   color: white;
 	// font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-
-  
 
   // ＃ヘッダー上の部分
   header.header {
@@ -178,8 +170,7 @@ body {
           // display: block;
           text-decoration: none;
           float: left;
-        }
-        
+        }   
       }
 
       h4.sub {
@@ -317,43 +308,7 @@ body {
     }
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // # user名マイページログアウト
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // # 入力フォーム
   // .form {
@@ -367,14 +322,11 @@ body {
       // bottom: 0;
       // right: 0;
       // .container {
-        
         // .new_user {
           // padding-left: 200px;
-          
         // }
       // }
     // }
-
 
     form {
       h3 {
@@ -404,9 +356,6 @@ body {
       }
     }
 
-
-
-    
     .search-form {
       // max-width: 660px;
       // margin: 0px auto;
@@ -428,19 +377,6 @@ body {
         // max-width: 660px;
       }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   // # コンテント
   div.contents.row {
@@ -496,7 +432,6 @@ body {
         }
       }
     }
-
 
     .container {
       // @include boxBase(20px 0 ,30px);
@@ -558,7 +493,6 @@ body {
     }
   }
 
-
   // # ページ
   // .pagination {
   //   // 
@@ -577,8 +511,6 @@ body {
     // border: 1px white solid;
     text-decoration: none;
   }
-
-
 
 // # フッター
 footer {

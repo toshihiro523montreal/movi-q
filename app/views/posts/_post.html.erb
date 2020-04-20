@@ -12,14 +12,14 @@
     <div class="more_list">
       <%# <li> %>
       <%# <a class="btn" href="/posts">投稿一覧へ戻る</a> %>
-        <%= link_to '答える', "/posts/#{post.id}", method: :get, class: 'btn btn-primary' %>
+        <%= link_to '投稿', "/posts/#{post.id}", method: :get, class: 'btn btn-primary' %>
       <%# </li> %>
       <% if user_signed_in? && current_user.id == post.user_id %>
         <%# <li> %>
-          <%= link_to '編集する', "/posts/#{post.id}/edit", method: :get, class: 'btn btn-warning' %>
+          <%= link_to '編集', "/posts/#{post.id}/edit", method: :get, class: 'btn btn-warning' %>
         <%# </li> %>
         <%# <li> %>
-          <%= link_to '削除する', "/posts/#{post.id}", method: :delete, class: 'btn btn-danger' %>
+          <%= link_to '削除', "/posts/#{post.id}", method: :delete, class: 'btn btn-danger' %>
         <%# </li> %>
       <% end %>
     </div>
