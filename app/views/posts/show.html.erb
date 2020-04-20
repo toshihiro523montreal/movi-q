@@ -23,9 +23,14 @@
   </div>
   <div class="container">
     <% if current_user %>
-      <%= form_with(model: [@post, @comment], local: true) do |form| %>
-        <%= form.text_area :text, placeholder: "回答する　/　コメントする", rows: "5", class: "textbox" %>
+      <%# <%= form_with(model: [@post, @comment], local: true) do |form| %> 
+        <%# <%= form.text_area :text, placeholder: "回答　/　コメント", rows: "5", class: "textbox" %> 
+        <%# <%= form.submit "投稿", class: "btn btn-danger" %> 
+
+      <%= form_with(model: [@post, @comment], local: true, id: "new_comment") do |form| %> 
+        <%= form.text_area :text, placeholder: "回答　/　コメント" , rows: "5", class: "textbox" %>
         <%= form.submit "投稿", class: "btn btn-danger" %>
+
       <% end %>
     <% else %>
       <strong><p>※※※ 回答やコメントの投稿には新規登録/ログインが必要です ※※※</p></strong>
