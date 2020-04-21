@@ -6,7 +6,7 @@
 
       <div class="field">
         <%= f.label :ニックネーム %> <em>(最大６文字で)</em><br />
-        <%= f.text_field :nickname, autofocus: true, maxlength: "6" %>
+        <%= f.text_field :nickname, autofocus: true, maxlength: "" %>
       </div>
 
       <div class="field">
@@ -27,7 +27,7 @@
         <%# <%= f.password_field :password_confirmation, autocomplete: "off" %> 
       <%# </div> %>
 
-      <div class="actions">
+      <div class="btn">
         <%= f.submit "登　録" %>
       </div>
     <% end %>

@@ -1,30 +1,29 @@
-// // @import "compass";
-// // // // /*
-// // // //  * "ほのか明朝" licensed under the IPA Font License Agreement v1.0
-// // // //  * http://fontfree.me/966（配布元のURL）
-// // // //  * http://ipafont.ipa.go.jp/（IPAフォントのURL）
-// // // //  * http://ipafont.ipa.go.jp/ipa_font_license_v1.html（IPAフォントライセンスv1.0のURL）
-// // // //  */
-// @font-face {
-//     // font-family: 'ほのか明朝';
-//     // src: url('font_1_honokamin.ttf') format('truetype');
-//     // font-weight: normal;
-//     // font-style: normal;
-// }
+// @import "compass";
+// // // /*
+// // //  * "ほのか明朝" licensed under the IPA Font License Agreement v1.0
+// // //  * http://fontfree.me/966（配布元のURL）
+// // //  * http://ipafont.ipa.go.jp/（IPAフォントのURL）
+// // //  * http://ipafont.ipa.go.jp/ipa_font_license_v1.html（IPAフォントライセンスv1.0のURL）
+// // //  */
+@font-face {
+    font-family: 'ほのか明朝';
+    src: url('font_1_honokamin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
-// @import url(http://fonts.googleapis.com/css?family=Unica+One);
+@import url(http://fonts.googleapis.com/css?family=Unica+One);
 
-// $accent: #57C3E9;
-// $black: #292929;
-// $dark: #666;
-// $darkGray: #999999;
-// $gray: #D8D8D8;
-// $lightGray: #f3f5f3;
-// $white: white;
-// $red: red;
-// $pink: pink;
-// $orange: orange;
-
+$accent: #57C3E9;
+$black: #292929;
+$dark: #666;
+$darkGray: #999999;
+$gray: #D8D8D8;
+$lightGray: #f3f5f3;
+$white: white;
+$red: red;
+$pink: pink;
+$orange: orange;
 
 // *:focus {
 //   outline: none;
@@ -32,87 +31,87 @@
 
 // // mixin
 
-// @mixin boxBase($margin: 30px auto, $padding: 10px) {
-//   margin: $margin;
-//   padding: $padding;
-// }
-// @mixin basePadding($padding: 10px) {
-//   padding: $padding;
-// }
-// @mixin baseMargin($margin: 10px auto) {
-//   margin: $margin;
-// }
+@mixin boxBase($margin: 30px auto, $padding: 10px) {
+  margin: $margin;
+  padding: $padding;
+}
+@mixin basePadding($padding: 10px) {
+  padding: $padding;
+}
+@mixin baseMargin($margin: 10px auto) {
+  margin: $margin;
+}
 
-// body,html {
-//   height: 100%;
-//   background-color: #EEFFFF;
-// }
+body,html {
+  // height: 100%;
+  // background-color: #EEFFFF;
+}
 
-// body {
-//   padding-top: 60px;
-// }
+body {
+  // padding-top: 60px;
+}
 
-// h1,h2,h3,h4,h5,h6,body {
+h1,h2,h3,h4,h5,h6,body {
 // line-height: 1.57;
 //   letter-spacing: 0.15em;
 //   font-size: 16px;
 //   color: $dark;
-//   // font-family: 'Unica One', "Avenir", "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W6", "HIragino Kaku Gothic Pro W6", "HIragino Kaku Gothic Pro", Osaka, Meiryo, "メイリオ", "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
+//   font-family: 'Unica One', "Avenir", "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W6", "HIragino Kaku Gothic Pro W6", "HIragino Kaku Gothic Pro", Osaka, Meiryo, "メイリオ", "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
 //   margin: 0;
+}
+
+a {
+  text-decoration: none;
+  // color: $dark;
+  // @extend .transition;
+  &:hover {
+    // color: $accent;
+  }
+}
+
+.bold {
+  // font-weight: bold;
+}
+
+.serif {
+  // font-family: 'ほのか明朝',serif;
+}
+
+.ultra {
+  // font-size: 2em !important;
+}
+
+::selection {
+  // background: $gray;
+}
+
+// .transition {
+//   @include transition-property(all);
+//   @include transition-duration(0.2s);
+//   @include transition-timing-function(linear);
 // }
 
-// a {
-//   text-decoration: none;
-//   color: $dark;
-//   // @extend .transition;
-//   &:hover {
-//     // color: $accent;
-//   }
-// }
+.btn {
+    // @include basePadding(8px 20px);
+    // font-size: 14px;
+    // border: 2px solid $gray;
+    // color: $accent;
+    // font-weight: bold;
+    // text-align: center;
+    // border-radius: 50px;
+    // display: inline-block;
+  &:hover {
+    // border-color: lighten($accent, 15%);
+    // color: lighten($accent, 15%);
+  }
+}
 
-// .bold {
-//   font-weight: bold;
-// }
+h1,h2,h3,h4,h5,h6 {
+}
 
-// .serif {
-//   font-family: 'ほのか明朝',serif;
-// }
-
-// .ultra {
-//   font-size: 2em !important;
-// }
-
-// ::selection {
-//   background: $gray;
-// }
-
-// // .transition {
-// //   @include transition-property(all);
-// //   @include transition-duration(0.2s);
-// //   @include transition-timing-function(linear);
-// // }
-
-// .btn {
-//     @include basePadding(8px 20px);
-//     font-size: 14px;
-//     border: 2px solid $gray;
-//     // color: $accent;
-//     font-weight: bold;
-//     text-align: center;
-//     border-radius: 50px;
-//     display: inline-block;
-//   &:hover {
-//     // border-color: lighten($accent, 15%);
-//     // color: lighten($accent, 15%);
-//   }
-// }
-
-// h1,h2,h3,h4,h5,h6 {
-// }
-
-// .title {
-//   font-weight: bold;
-// }
+.title {
+  // font-weight: bold;
+}
 
 // .title--big {
 //   font-size: 1.5em;
@@ -123,232 +122,422 @@
 //   }
 // }
 
+@import "bootstrap";
+
+
 html,body,div,span,iframe,h1,h2,h3,h4,h5,p,a,img,ul,li,table,tr,th,td,tbody,footer,header,main,nav,section {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-weight: normal;
-	list-style: none;
-	text-decoration: none;
+	// margin: 0;
+	// padding: 0;
+	// border: 0;
+	// font-weight: normal;
+	// list-style: none;
+	// text-decoration: none;
 }
 
-
-
 body {
-	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-
-
+  background: url(https://beiz.jp/images_P/wood-texture/wood-texture_00018.jpg);
+  width: 100%;
+  height: 100%;
+  color: white;
+	// font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 
   // ＃ヘッダー上の部分
   header.header {
-    // background: url(https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/6432841/picture_pc_e9cd48501e8ad5f03a13bfefcf9e1f19.jpg) no-repeat;
-    // width: 100%;
-    // background-color:pink;
+    // background: url(https://www.sozailab.jp/db_img/sozai/10626/67011da18b957f7130d0c7086a71408c.jpg);
+    // background-color: white;
+    width: 100%;
     // position: fixed;
-    // height: 100px;
-    
+    height: 150px;
+    color: white;
     div.header__bar.row {
+      justify-content: space-evenly;
+      background: url(https://www.sozailab.jp/db_img/sozai/10626/67011da18b957f7130d0c7086a71408c.jpg);
       // position: relative;
       // display: flex;
+      // text-decoration: none;
       h1.title {
-        height: 50px;
-        // display: flex;
         
+        // height: 100px;
+        // display: flex;
+        padding-top: 30px;
         // display: inline;
-        // font-size: 30px;
+        font-size: 60px;
         // line-height: 100px;
         // float: left;
         
         a {
+          color: white;
+          margin-left: 250px;
           // display: block;
-        }
-        p {
-          // text-decoration: none;
-          // color: $dark;
-        }
+          text-decoration: none;
+          float: left;
+        }   
       }
 
       h4.sub {
-        height: 50px;
-        display: flex;
+        padding: 0 10%;
+        font-size: 20px;
+        color: white;
+        margin-top: 20px;
+        height: 100px;
+        // display: flex;
         // display: contents;
         // float: right;
         // text-align: right;
-        // line-height: 100px;
-        a.post {
+        line-height: 20px;
+        margin-left: 50px;
+        a {
+          text-decoration: none;
+          margin-left: 130px;
            // @extend .btn;
           // width: 150px;
-          // line-height: 30px;
+          line-height: 50px;
+          height: 10px;
+          color: white;
+          // float: left;
           // display: inline-left;
           // margin-left: 10px;
         }
       }
-
       div.input {
-        height: 50px;
-        float: right;
+        // height: 150px;
+        color: white;
+        // float: right;
+        margin-top: 60px;
+        margin-left: 600px;
+        // margin-top: 70px;
         // display: contents;
         // float: right;
         // text-align: right;
-        // line-height: 100px;
-        a.post {
-          // @extend .btn;
-          // width: 150px;
-          // line-height: 30px;
-          // display: inline-left;
-          // margin-left: 10px;
+        // line-height: 150px;
+        // div.grid-6 {
+          // float: right;
+          // text-align: right;
+          a.post {
+            // @extend .btn;
+            // width: 150px;
+            // line-height: 30px;
+            // display: inline-left;
+            // margin-right: 10px;
+            top: 50px;
+          }
+        }
+    // }
+      // div.input {
+        // height: 150px;
+        // color: white;
+        // float: right;
+        // margin-top: 60px;
+        // margin-left: 40px;
+        // margin-top: 70px;
+        // display: contents;
+        // float: right;
+        // text-align: right;
+        // line-height: 150px;
+        // div.grid-6 {
+          // float: right;
+          // text-align: right;
+          // a.post {
+            // @extend .btn;
+          //   width: 150px;
+          //   line-height: 30px;
+          //   display: inline-left;
+          //   margin-left: 10px;
+          //   top: 50px;
+          // }
+        
+        // a.post {
+        //   // @extend .btn;
+        //   width: 150px;
+        //   // line-height: 30px;
+        //   // display: inline-left;
+        //   margin-left: 10px;
+        //   top: 50px;
+        // }
+        }
+    .user_nav {
+      // position: relative;
+      // height: 100px;
+      // right: 0;
+      span {
+        top: 50px;
+        display: block;
+        float: left;
+        margin-left: 30px;
+        // margin-right: 50px;
+        width: 150px;
+        height: 50px;
+        font-size: 30px;
+        cursor: pointer;
+        position: relative;
+        &:after {
+          content: '▼';
+          font-size: .1em;
+          margin-left: -4px;
+        }
+        a {
+          font-size: 15px
+      }
+        &:hover ul {
+          // color: $accent;
+          display: block;
+          font-size: 30px;
         }
       }
+      ul {
+        display: none;
+        position: absolute;
+        // top: 46px;
+        // right: 0;
+        // border-left: 1px solid #d8d8d8;
+        // border-right: 1px solid #d8d8d8;
+        // border-top: 1px solid #d8d8d8;
+        // border-bottom: 1px solid #d8d8d8;
+        // box-shadow: 1px 2px 5px rgba(0,0,0,0.1);
+        li {
+          background-color: white;
+          list-style: none;
+          a {
+            display: block;
+            padding: 5px 10px;
+            text-align: left;
+            border-bottom: 1px solid #d8d8d8;
+            text-decoration: none;
+          }
+        }
+       }
     }
   }
-
-
-
 
 // # user名マイページログアウト
-  .user_nav {
-    position: relative;
-    height: 100px;
-    right: 0;
-    span {
-      // top: 5px;
-      // display: block;
-      float: left;
-      margin-left: 30px;
-      width: 150px;
-      height: 50px;
-      // font-size: 1em;
-      cursor: pointer;
-      position: relative;
-      &:after {
-        content: '▼';
-        font-size: .7em;
-        margin-left: -4px;
-      }
-      &:hover ul {
-        // color: $accent;
-        display: block;
-      }
-    }
-    ul {
-      display: none;
-      position: absolute;
-      // top: 46px;
-      // right: 0;
-      border-left: 1px solid #d8d8d8;
-      border-right: 1px solid #d8d8d8;
-      border-top: 1px solid #d8d8d8;
-      border-bottom: 1px solid #d8d8d8;
-      box-shadow: 1px 2px 5px rgba(0,0,0,0.1);
-      li {
-        background-color: white;
-        a {
-          display: block;
-          padding: 5px 10px;
-          text-align: left;
-          border-bottom: 1px solid #d8d8d8;
-        }
-      }
-     }
-  }
-
-
-
 
 // # 入力フォーム
-  .form {
+  // .form {
     // background: url(https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/6432841/picture_pc_e9cd48501e8ad5f03a13bfefcf9e1f19.jpg) no-repeat;
     // background: url(https://dl.dropboxusercontent.com/u/5840617/DeathtoStock_Wired3.jpg);
-    background-size: cover;
-    .contents {
+    // background-size: cover;
+    // .contents {
       // position: absolute;
       // left: 0;
       // top: 30%;
       // bottom: 0;
       // right: 0;
+      // .container {
+        // .new_user {
+          // padding-left: 200px;
+        // }
+      // }
+    // }
+
+    form {
+      h3 {
+        // @include baseMargin(0 0 20px);
+        text-align: center;
+        font-weight: normal;
+        font-size: 20px;
+        // color: $dark;
+      }
+      input,textarea {
+        width: 100%;
+        @include boxBase(5px 0 15px,10px);
+        // border: 1px solid $gray;
+        // border-radius: 5px;
+        // font-family: "游ゴシック", "YuGothic";
+      }
+      input[type="submit"] {
+        // @extend .transition;
+        // background-color: $accent;
+        // border-radius: 20px;
+        // color: #fff;
+        border: 0;
+        font-size: 15px;
+        &:hover {
+          // background-color: lighten($accent, 10%);
+        }
+      }
     }
-  }
 
-
-  .search-form {
-    text-align: center;
-    padding-top: 100px;
-    .search-input {
-      // width: 30%;
-      // margin-right: 10px;
+    .search-form {
+      // max-width: 660px;
+      // margin: 0px auto;
+      // text-align: center;
+      margin-top: 170px;
+      display: flex;
+      // margin: 0px auto;
+      // width: 300px;
+      .form-control {
+        width: 30%;
+        // max-width: 660px;
+        text-align: center;
+        margin-left: 420px;
+      }
+      .btn {
+        width: 10%;
+        margin-left: 10px;
+        // height:50px;
+        // max-width: 660px;
+      }
     }
-
-    .search-btn {
-      width: 10%;
-    }
-  }
-
 
   // # コンテント
   div.contents.row {
-    margin: 100px auto 0px auto;
-    max-width: 660px;
-    span {
+    margin: 150px auto 0px auto;
+    max-width: 800px;
+    // padding-top: -50px;
+    p {
+      font-size: 20px;
+    }
+    a span {
       // @include boxBase(20px 0, 0);
       font-weight: normal;
+      color: white;
+      font-size: 20px;
+      // padding-top: -50px;
       // strong {
         // font-weight: bold;
         // padding-right: 5px;
         // font-size: 1.2em;
       // }
     }
-
-
+    a {
+      color: white;
+      font-size: 20px;
+    }
     // .container {
     div.content_post {
       // @include boxBase(20px 0 ,30px);
       // box-shadow: 0 0 10px rgba($black,0.2);
       // background-color: $white;
       // box-sizing: border-box;
-      .comments {
-        padding: 5px;
-        margin-top: 15px;
-        a {
-          // color: $dark;
-          // &:hover {
-          //   text-decoration: underline;
-          }
-        p {
-
-        }
-        }
-      }
+      // position: relative;
+      background: url(http://gahag.net/img/201604/13s/gahag-0075581837-1.png) no-repeat;
+      height: 200px;
+      color:white;
+      width: 800px;
+      // background-size: cover;
+      // background-position: center center;
+      // border-radius: 3px;
+      // margin-top: -50px;
+      overflow: scroll;
+      box-shadow: 0 0 10px rgba($black,0.2);
     }
   
-  .more {
-    .more_list {
-      .li {
-        .a {
+    .comments {
+      padding: 5px;
+      margin-top: 15px;
+      background: url(http://gahag.net/img/201604/13s/gahag-0075581837-1.png) no-repeat;
+      a {
+        color: $accent;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
 
+    .container {
+      // @include boxBase(20px 0 ,30px);
+      // box-shadow: 0 0 10px rgba($black,0.2);
+      // background-color: $white;
+      margin-top: 20px;
+      background: url(http://gahag.net/img/201604/13s/gahag-0075581837-1.png) no-repeat;
+      // box-sizing: border-box;
+      .field {
+        // width: 300px;
+        .user_nickname {
+          width: 300px;
+        }
+      }
+    }
+
+  .more {
+    // position: absolute;
+    // cursor: pointer;
+    // top: 20px;
+    // right: 30px;
+    // z-index: 2;
+    // height: 80px;
+    width: 100%;
+    // text-align: right;
+    .more_list {
+      text-decoration: none;
+      margin-bottom: 20px;
+      // position: absolute;
+      // text-align: left;
+      // width: 80px;
+      // right: 0;
+      // font-size: 12px;
+      // background-color: #fff;
+      // border: 1px solid #ddd;
+      // display: none;
+      // box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+      // border-radius: 3px;
+      .name {
+        .li {
+          // border-bottom: 1px solid #ddd;
+          text-decoration: none;
+            // &:last-child {
+              // border-bottom: 0;
+            // }
+          .a {
+            
+            // display: block;
+            //   padding: 5px;
+            text-decoration: none;
+            margin-left: 50px;
+              // &:hover {
+                // background-color: $accent;
+                // color: #fff;
+              // }
+            }
+          }
         }
       }
     }
   }
-   
+
   // # ページ
-  .pagination {
-    // margin-top: 20px;
+  // .pagination {
+  //   // 
+  //   color: inherit; 
+    
+  //   p {
+  //     padding-left: 20px;
+  //   }
+  // }
+  .pagination a {
+    // display: block;
+    color: white;
+    // justify-content: space-around;
+    // width: 30px;
+    // height: 30px;
+    // border: 1px white solid;
+    text-decoration: none;
   }
 
-
-
-
+  span.page.current {
+    margin-left: 5px;
+    font-size: 20px;
+    justify-content: space-around;
+    
+  }
+  // a {
+  //   margin-left: 5px;
+  // }
 
 // # フッター
 footer {
   // position: absolute;
-  // bottom: 10px;
-  // left: 0;
-  // right: 0;
+  height: 60px;
+  bottom: 0px;
+  left: 0;
+  right: 0;
   // @include boxBase;
-  // color: $dark;
+  background: url(https://www.sozailab.jp/db_img/sozai/10626/67011da18b957f7130d0c7086a71408c.jpg);
   p {
-    // text-align: center;
+    // max-width: 660px;
+    text-align: center;
+    line-height: 60px;
+    margin-top: 180px;
   }
-}
+  }
 }
